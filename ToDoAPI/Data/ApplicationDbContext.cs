@@ -22,6 +22,7 @@ namespace ToDoAPI.Data
                 .HasIndex(tag => tag.Name)
                 .IsUnique();
 
+            SeedHelper.SeedModelBuilder(modelBuilder);
         }
     }
 }
